@@ -65,24 +65,25 @@
     }
 
     #submit{
-        background-color: orange;
+        background-color: #ee782e;;
         color: white;
         font-weight: bold;
         width: 150px;
         margin-top: 25px;
     }
 
-    #referencia{
-        position: absolute;
-        margin-top: 93px;
-        margin-left: 240px;
+    #submit:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        background-color: #f6a675;
+
     }
 
     #alerta{
     
         font-size: 20px;
         color: white;
-        border-radius: 15px;
+        border-radius: 10px;
         font-weight: bold;
         border-color: #d16c25;
         background-color: #d16c25;
@@ -91,11 +92,13 @@
     #alerta p{
         margin: 0px;
     }
+
     #textoalerta{
         position: absolute;
         margin-top: -350px;
         margin-left: 800px;
         border-radius: 10px;
+        padding: 15px;
         font-size: 17px;
         border-color: #fbf0e8;
         background-color: #fbf0e8;
@@ -103,11 +106,29 @@
 
     }
 
-    #referencia:hover{
 
-        color: rgb(31, 216, 11);
-       
+    #PC{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 540px;
+    }
 
+    #PC2{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 750px;
+    }
+
+    #PC3{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 950px;
+    }
+
+    #PC4{
+        position: absolute;
+        margin-top: 70px;
+        margin-left: 1150px;
     }
 
     
@@ -130,9 +151,7 @@
         margin-top: 20px;
         margin-left: 235px;
         font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        
-        
+        font-weight: bold;  
     }
 
 
@@ -204,7 +223,17 @@
             </fieldset>
           </div>
     </fieldset>
+    
+    <div>
 
-    <a id="referencia" href="https://www.detran.mg.gov.br/infracoes/central-de-pontuacao/consultar-pontuacao-na-cnh">FORMULÁRIO UTILIZADO COMO REFERÊNCIA</a>
+        <a id="PC" href="https://www.policiacivil.mg.gov.br/">
+            <img src="https://www.detran.mg.gov.br/publico/img/links_uteis/brasao_conselho_nacional.png" width="80">
+        </a>
+        <img id="PC2" src="https://www.detran.mg.gov.br/publico/img/links_uteis/policia-civil%20197.png" width="120">
+        <img id="PC3" src="https://www.detran.mg.gov.br/publico/img/links_uteis/disque-denuncia181.png" width="100">
+        <a href="https://delegaciavirtual.sids.mg.gov.br/sxgn/">
+            <img id="PC4" src="https://www.detran.mg.gov.br/publico/img/links_uteis/delegacia-virtual.png" width="220">
+        </a>
+    </div>
   </body>
 </html>
