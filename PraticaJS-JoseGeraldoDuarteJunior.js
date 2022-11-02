@@ -1,4 +1,4 @@
-const pessoas = [
+let pessoas = [
   { name: "Fabiana Araújo", age: 33 },
   { name: "Gabriel Gomes", age: 25 },
   { name: "Fernando Henrique", age: 17 },
@@ -8,44 +8,60 @@ const pessoas = [
   { name: "Antonio Miguel", age: 69 },
 ];
 //----------------Exercicio 3----------------
-const ex3 = pessoas.map((item) => {
-  if (item.name == "Gabriel Gomes") {
-    return item;
-  }
-});
-console.log(ex3);
+
+function ex3(n) {
+  return pessoas.map((item) => {
+    if (item.name == n) {
+      return item;
+    }
+  });
+}
+
+console.log(ex3("Gabriel Gomes"));
 
 //----------------Exercicio 4----------------
-const ex4 = pessoas.map((item) => {
-  return item.name;
-});
-console.log(ex4);
 
-const ex4Bonus = pessoas.map((item) => {
-  return item.name.split(" ",1);
-});
-console.log(ex4Bonus);
+function ex4() {
+  return pessoas.map((item) => {
+    return item.name;
+  });
+}
+console.log(ex4());
+
+function ex4Bonus() {
+  return pessoas.map((item) => {
+    return item.name.split(" ", 1);
+  });
+}
+
+console.log(ex4Bonus());
 
 //----------------Exercicio 5----------------
-const ex5 = pessoas.map((item, index) => {
-  item.id = index + 1;
-  return { id: item.id, name: item.name, age: item.age };
-});
-console.log(ex5);
-
+function ex5() {
+  return pessoas.map((item, index) => {
+    item.id = index + 1;
+    return { id: item.id, name: item.name, age: item.age };
+  });
+}
+console.log(ex5());
+pessoas = ex5();
 //----------------Exercicio 6----------------
-const ex6 = ex5.map((item) => {
-  if (item.age >= 18) {
-    return item;
-  }
-});
-console.log(ex6);
+function ex6() {
+  return pessoas.map((item) => {
+    if (item.age >= 18) {
+      return item;
+    }
+  });
+}
+console.log(ex6());
 
 //----------------Exercicio 7----------------
-let ex7 = 0;
-ex5.forEach((item) => {
-  ex7 = item.age + ex7;
-});
-ex7 = ex7 / pessoas.length;
+function ex7() {
+  let media = 0;
+  pessoas.forEach((item) => {
+    media += item.age;
+  });
+  return media / pessoas.length;
+}
 
-console.log(`Media das Idades: ${ex7}`);
+console.log(`Media das Idades: ${ex7()}`);
