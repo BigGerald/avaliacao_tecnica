@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    :root {
+        display: flex;
+      background-color: #f8f9fa;
+
+    }
+    #back{
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+
+    #logo{
+        position: absolute;
+        margin-top: 35px;
+        margin-left: 250px;
+        display: flex;
+    }
+
+    #a1{
+        position: absolute;
+        margin-top: -245px;
+        margin-left: 250px;
+        margin-right: 0;
+    }
+
+    #a1:hover{
+        color: rgb(114, 5, 5);
+    }
+
+    #a2{
+        position: absolute;
+        margin-top: -245px;
+        margin-left: 350px;
+    }
+
+    #a2:hover{
+        color: rgb(114, 5, 5);
+    }
+
+    a{
+        text-decoration: none;
+        color: #6f7174;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    #fieldCab{
+        border-width: 0.5px;
+        border-color: rgb(154, 211, 236);
+        border-left: 100%;
+        border-right: 100%; 
+    }
+    #cab{
+        margin-left: 235px;
+        color: orange;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #fieldForm{
+        border-width: 0.5px;
+        border-top: 10px;
+        background-color: white;
+    }
+
+    #submit{
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        width: 150px;
+        margin-top: 25px;
+    }
+
+    #referencia{
+        position: absolute;
+        margin-top: 93px;
+        margin-left: 240px;
+    }
+
+    #alerta{
+    
+        font-size: 20px;
+        color: white;
+        border-radius: 15px;
+        font-weight: bold;
+        border-color: #d16c25;
+        background-color: #d16c25;
+        padding: 10px;
+    }
+    #alerta p{
+        margin: 0px;
+    }
+    #textoalerta{
+        position: absolute;
+        margin-top: -350px;
+        margin-left: 800px;
+        border-radius: 10px;
+        font-size: 17px;
+        border-color: #fbf0e8;
+        background-color: #fbf0e8;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #referencia:hover{
+
+        color: rgb(31, 216, 11);
+       
+
+    }
+
+    
+
+    input{
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            width: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            
+
+        }
+
+    form{
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 235px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        
+        
+    }
+
+
+
+
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form José Geraldo</title>
+    <div id="logo">
+        <a href="https://www.detran.mg.gov.br/">
+        <img  src="https://www.detran.mg.gov.br/publico/img/logo/LOGO-SITE-DETRANMG.png" width="130">
+    </a>
+    </div>
+
+    <div id="back">
+        <img src="https://www.detran.mg.gov.br/publico/img/header/cabealho2.jpg" alt=""> 
+    </div>
+     
+    <div>
+        <a id="a1" href="https://rethink.dev/">RETHINK</a>
+        <a id="a2" href="https://www.linkedin.com/in/jos%C3%A9-geraldo-duarte-j%C3%BAnior-8a638223a/">FALE COM O DEV</a>
+    </div>
+
+  </head>
+
+  <body>
+    <fieldset id="fieldCab">
+        <label id="cab" for="form">FORMULÁRIO DE CADASTRO</label>
+        
+    </fieldset>
+
+    <fieldset id="fieldForm">
+
+        <form action="/action_page.php">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="fname" placeholder="Insira seu nome completo">
+    
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" placeholder="Insira sua idade">
+    
+            <label for="prof">Profissao:</label>
+            <input type="text" id="prof" placeholder="Insira sua profissão"> 
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Insira se e-mail">
+    
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" placeholder="Insira seu telefone">
+    
+            <label for="dataPreenchimento">Data de preenchimento:</label>
+            <input type="date" id="dataPreenchimento">
+
+            <input type="submit" id="submit" >
+
+    
+            <!-- <input type="submit" value="Submit"> -->
+          </form> 
+          <div>
+            
+            <fieldset id="textoalerta">
+                <fieldset id="alerta">
+                    <p>Atenção: </p>
+                </fieldset>
+                <p>Ao pressionar o botão enviar, o usuário deve estar ciente que seus dados estão sendo 
+                    <br>colocados a disposição do DETRAN-MG para todos os fins necessários.</p>
+            </fieldset>
+          </div>
+    </fieldset>
+
+    <a id="referencia" href="https://www.detran.mg.gov.br/infracoes/central-de-pontuacao/consultar-pontuacao-na-cnh">FORMULÁRIO UTILIZADO COMO REFERÊNCIA</a>
+  </body>
+</html>
